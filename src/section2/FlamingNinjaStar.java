@@ -5,6 +5,21 @@ import org.jointheleague.graphical.robot.Robot;
 public class FlamingNinjaStar {
 	
 	public static void main(String[] args) {
+		Robot Jason=new Robot();
+		Jason.penDown();
+		Jason.setSpeed(100);
+		int baseSize = 300;		//the size of the black part of the star
+		int flameSize = 200;
+		for (int i = 0; i < args.length; i++) {
+			Jason.turn(45);
+			Jason.move(64);
+			Jason.turn(-40);
+			Jason.move(flameSize);
+			Jason.turn(170);
+			Jason.move(flameSize);
+			Jason.turn(64);
+			Jason.move(baseSize);
+		}
 
 		int baseSize = 300;		//the size of the black part of the star
 		int flameSize = 200;		//the length of the flaming arms
