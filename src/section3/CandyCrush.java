@@ -12,7 +12,10 @@ public class CandyCrush {
 		// 3. Ask the user for the name of their best friend
 
 		// 4. Tell them their best friend is as sweet as candy
-
+String answer=JOptionPane.showInputDialog("Who do you not like");
+JOptionPane.showMessageDialog(null, "You totally have a crush on "+answer);
+String name=JOptionPane.showInputDialog("What is the name of you best friend");
+JOptionPane.showMessageDialog(null, name+" is as sweet as candy");
 	} 
 }
 

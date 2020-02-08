@@ -17,7 +17,14 @@ public class SpeakAndSpell {
 		// 4. Otherwise say "wrong"
 
 		// 5. repeat the process for other words
-		
+		speak("spell mandlebrot");
+		String answer=JOptionPane.showInputDialog("Spell");
+		if(answer.equals("mandlebrot")) {
+	speak("correct");
+		}
+		else {
+			speak("wrong");
+		}
 	}
 
 	static void speak(String words) {

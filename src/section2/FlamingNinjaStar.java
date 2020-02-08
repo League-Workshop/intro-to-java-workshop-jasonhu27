@@ -1,5 +1,7 @@
 package section2;
 
+import java.awt.Color;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class FlamingNinjaStar {
@@ -7,10 +9,11 @@ public class FlamingNinjaStar {
 	public static void main(String[] args) {
 		Robot Jason=new Robot();
 		Jason.penDown();
-		Jason.setSpeed(100);
+		Jason.setSpeed(1000);
 		int baseSize = 300;		//the size of the black part of the star
 		int flameSize = 200;
-		for (int i = 0; i < args.length; i++) {
+		for (int i = 0; i < 25; i++) {
+			Jason.setPenColor(Color.blue);
 			Jason.turn(45);
 			Jason.move(64);
 			Jason.turn(-40);
@@ -21,9 +24,8 @@ public class FlamingNinjaStar {
 			Jason.move(baseSize);
 		}
 
-		int baseSize = 300;		//the size of the black part of the star
-		int flameSize = 200;		//the length of the flaming arms
-		
+		//the size of the black part of the star
+
 		// 1. Make a new robot, and set it's pen down.
 
 		// *14. Use the methods setX and setY to move the ninja star into the center of the screen
@@ -53,6 +55,16 @@ public class FlamingNinjaStar {
 			// 10. Check that your shape is the same as Figure 1. This is one arm of the ninja star.
 			
 			// 11. Color your ninja star like Figure 2.
+		
+	}
+
+	private static void setY() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void setX() {
+		// TODO Auto-generated method stub
 		
 	}
 
