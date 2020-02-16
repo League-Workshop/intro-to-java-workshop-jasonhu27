@@ -1,5 +1,7 @@
 package section4;
 
+import javax.swing.JOptionPane;
+
 public class QuizGame {
 	
 	public static void main(String[] args) {
@@ -14,7 +16,35 @@ public class QuizGame {
 		
 		// 5.  Create more questions by repeating steps 1, 2, and 3 below. 
 		
-		// 6.  After all the questions have been asked, print the user's score 
-		
+	JOptionPane.showMessageDialog(null, "User Score: 0");
+	String answer=JOptionPane.showInputDialog("What is the Color of the Sun?");
+	if(answer.contentEquals("yellow")) {
+		JOptionPane.showMessageDialog(null, "User Score: "+ 1);
 	}
-}
+		else{
+		JOptionPane.showMessageDialog(null, "incorrect");
+		JOptionPane.showMessageDialog(null, "User Score: 0");
+	}
+	String blue=JOptionPane.showInputDialog("What is the Color of the Sky?");
+	if(blue.contentEquals("blue")) {
+		JOptionPane.showMessageDialog(null, "User Score: "+ 2);
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "incorrect");
+		JOptionPane.showMessageDialog(null, "User Score: 1");
+	}
+	String basketball=JOptionPane.showInputDialog("Whos is the Greatest Basketball Player of All time");
+			if(basketball.contentEquals("Lebron James")) {
+				JOptionPane.showMessageDialog(null, "User Score: "+ 3);
+			}	
+			else {
+					JOptionPane.showMessageDialog(null, "incorrect");
+					JOptionPane.showMessageDialog(null, "User Scores: 2");
+				}
+			}
+			
+				
+		}
+		
+	
+
